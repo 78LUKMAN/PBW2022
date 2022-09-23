@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multimedia HTML 5</title>
+</head>
+
+<body>
+    <h2>HTML 5 - Mengolah File Multimedia</h2>
+    <button onclick="playVid()">Play</button>
+    <button onclick="pauseVid()">Pause</button>
+    <button onclick="durationVid()">Video Duration</button>
+    <button onclick="enableControls()">Enable Controls</button>
+    <button onclick="disableControls()">Disable Controls</button>
+    <button onclick="checkControls()">Check Controls Status</button>
+    <button onclick="enableAutoplay()">Enable Autoplay</button>
+    <button onclick="disableAutoplay()">Disable Autoplay</button><br>
+
+    <video id="myVideo">
+        <source src="src/Ibu.mp3" type="audio/mp3">
+    </video>
+</body>
+<script>
+    var vid = document.getElementById("myVideo");
+
+    function playVid() {
+        vid.play();
+    }
+
+    function pauseVid() {
+        vid.pause();
+    }
+    function durationVid() {
+        alert(vid.duration);
+    }
+    function enableControls() {
+        vid.controls = true;
+        vid.load;
+    }
+    function disableControls() {
+        vid.controls = false;
+        vid.load;
+    }
+    function checkControls() {
+        alert(vid.controls);
+    }
+
+    function enableAutoplay() {
+        vid.autoplay = true;
+        vid.load()
+    }
+
+    function disableAutoplay() {
+        vid.autoplay = false;
+        vid.load()
+    }
+
+</script>
+
+</html>
