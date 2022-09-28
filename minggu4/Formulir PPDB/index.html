@@ -1,0 +1,191 @@
+<!-- 
+    Lukmanul Hakim
+    Pemrograman Berbasis Web
+    A11.2022.14197
+    4105
+ -->
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Document</title>   
+</head>
+
+<body>
+    <h1 style="text-align: center;">FORMULIR PPDB JALUR ZONASI</h1>
+    <div class="form-container">
+        <form action="proses.php" method="post">
+            <table border="0">
+                <tr>
+                    <td colspan="23">
+                        <h3>INFO PENDAFTARAN</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="nisn">NISN</label></td>
+                    <td>:</td>
+                    <td colspan="2"><input type="number" id="nisn" name="nisn" required></td>
+                </tr>
+                <tr>
+                    <td><label for="aslSklh">Asal Sekolah</label></td>
+                    <td>:</td>
+                    <td colspan="2"><input type="text" id="aslSklh" name="aslSklh" required></td>
+                </tr>
+                <tr>
+                    <td><label for="tLulus">Tahun Lulus</label></td>
+                    <td>:</td>
+                    <td colspan="2"><input type="number" id="tLulus" name="tLulus" required></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h3>DATA CALON PESERTA</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="nLengkap">Nama Lengkap</label></td>
+                    <td>:</td>
+                    <td colspan="2"><input type="text" id="nLengkap" name="nLengkap" required></td>
+                </tr>
+                <tr>
+                    <td><label for="nik">NIK</label></td>
+                    <td>:</td>
+                    <td colspan="2"><input type="number" id="nik" name="nik" required></td>
+                </tr>
+                <tr>
+                    <td><label for="tLahir">Tempat <br> Tanggal Lahir</label></td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" id="tLahir" name="tLahir" required><br>
+                        <input type="date" id="tglLahir" name="tglLahir" required>
+                     </td>
+                </tr>
+                <tr>
+                    <td><label>Upload Akte kelahiran Legalisir</label></td>
+                    <td>:</td>
+                    <td colspan="2"><input type="file" id="akteLahirLeg" name="akteLahirLeg" required></td>
+                </tr>
+                <tr>
+                    <td><label for="jKelamin">Jenis Kelamin</label></td>
+                    <td>:</td>
+                    <td>
+                        <select name="kelamin" id="kelamin" required>
+                            <option value="::none">::none</option>
+                            <option value="Laki-Laki">Laki-Laki</option>
+                            <option value="Perempuan">Perempuan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="almt">Alamat</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="almt" id="almt"></td>
+                </tr>
+                <tr>
+                    <td class="detail-data"><label for="desa/kel">Desa Kel</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="desa/kel" id="desa/kel" required></td>
+                </tr>
+                <tr>
+                    <td class="detail-data"><label for="kec">Kecamatan</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="kec" id="kec" required></td>
+                </tr>
+                <tr>
+                    <td class="detail-data"><label for="kab">Kabupaten</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="kab" id="kab" required></td>
+                </tr>
+                <tr>
+                    <td class="detail-data"><label for="prov">Provinsi</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="prov" id="prov" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email Aktif</label></td>
+                    <td>:</td>
+                    <td><input type="email" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h3>DATA ORANG TUA</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="noKK">Nomor Kartu Keluarga</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="noKK" id="noKK"></td>
+                </tr>
+                <tr>
+                    <td><label for="nmAyah">Nama Ayah Kandung</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="nmAyah" id="nmAyah"></td>
+                </tr>
+                <tr>
+                    <td><label for="agama">Agama</label></td>
+                    <td>:</td>
+                    <td><select name="agama" id="agama">
+                            <option value="::none">::none</option>
+                            <option value="islam">Islam</option>
+                            <option value="kristen">Kristen</option>
+                            <option value="hindu">Hindu</option>
+                            <option value="budha">Budha</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="pkjn">Pekerjaan</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="pkjn" id="pkjn"></td>
+                </tr>
+                <tr>
+                    <td><label for="nmIbu">Nama Ibu Kandung</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="nmIbu" id="nmIbu"></td>
+                </tr>
+                <tr>
+                    <td><label for="agama">Agama</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="agama" id="agama"></td>
+                </tr>
+                <tr>
+                    <td><label for="pkjn">Pekerjaan</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="pkjn" id="pkjn"></td>
+                </tr>
+                <tr>
+                    <td><label for="almtOrtu">Alamat Orang Tua</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="almtOrtu" id="almtOrtu"></td>
+                </tr>
+                <tr>
+                    <td class="detail-data"><label for="desa/kel">Desa Kel</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="desa/kel" id="desa/kel" required></td>
+                </tr>
+                <tr>
+                    <td class="detail-data"><label for="kec">Kecamatan</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="kec" id="kec" required></td>
+                </tr>
+                <tr>
+                    <td class="detail-data"><label for="kab">Kabupaten</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="kab" id="kab" required></td>
+                </tr>
+                <tr>
+                    <td class="detail-data"><label for="prov">Provinsi</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="prov" id="prov" required></td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="Kirim Data" class="subBtn">
+            <br>
+        </form>
+    </div>
+</body>
+
+</html>
