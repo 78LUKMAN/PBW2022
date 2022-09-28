@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        a:visited {
+            color: rgb(0, 4, 255);
+        }
+
+        a:active {
+            color: red;
+        }
+
+        .link-img {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+        Use the <a> element to define a link
+        Use the href attribute to define the link address
+        Use the target attribute to define where to open the linked document
+        Use the <img> element (inside <a>) to use an image as a link
+        Use the mailto: scheme inside the href attribute to create a link that opens the user's email program
+     -->
+    <!-- syntax 
+        <a href="url">link text</a>
+    -->
+    <a href="https://github.com/78LUKMAN" target="_top">Check and Follow my github</a>
+    <br>
+    <figure>
+        <!-- use an image as a link -->
+        <a href="https://google.com">
+            <img src="../HTML Attributes/google.png" alt="google icon" class="link-img">
+        </a>
+        <figcaption>Google</figcaption>
+    </figure>
+
+    <!-- link to email addr -->
+    <a href="mailto:emailmu@gmail.com">Contact Me</a>
+
+    <!-- button as a link -->
+    <!-- opsi 1 -->
+    <a href="http://google.com">
+        <button>Google</button>
+    </a>
+    <!-- opsi 2 -->
+    <button onclick="document.location='../Iframe_link_target/main.html'">Iframe</button>
+
+    <!-- link title -->
+    <a href="https://www.microsoft.com" title="Go to Microsoft">Microsoft</a>
+</body>
+
+</html>

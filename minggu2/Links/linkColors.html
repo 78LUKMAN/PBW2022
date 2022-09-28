@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Colors</title>
+
+    <style>
+        a:link {
+            color: red;
+            text-decoration: unset;
+        }
+        a:active {
+            color: green;
+            font-weight: bold;
+        }
+        a:visited {
+            color: yellowgreen;
+            font-style: italic;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a.link-btn, a.link-btn:visited {
+            border-radius: 10px;
+            color: white;
+            padding: 12px 15px;
+            background-color: red;
+        }
+        a.link-btn:active, a.link-btn:visited {
+            background-color: rgb(0, 0, 0);
+            color: rgb(27, 203, 0);
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        By default, a link will appear like this (in all browsers):
+        An unvisited link is underlined and blue
+        A visited link is underlined and purple
+        An active link is underlined and red
+     -->
+     
+     <h1>Link Colors</h1>
+     <a href="links.html" target="_blank">Go to links.html</a>
+
+
+     <!-- link button -->
+     <h1>Link Button</h1>
+     <a href="linkBookmarks.html#bab18" target="_blank" class="link-btn">Jump to Bookmarks BAB 18</a>
+</body>
+</html>
