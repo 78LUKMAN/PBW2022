@@ -1,0 +1,48 @@
+body {
+    background-color: rgba(36, 81, 121, 0.102);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+table tr td {
+    padding: 5px 20px 5px 20px;
+    border-bottom: .5px solid rgb(0, 0, 0);
+}
+
+input[type=text],
+input[type=number],
+input[type=email] {
+    width: 194px;
+}
+.subBtn {
+    margin: 0 0 20px 0;
+    padding: 6px;
+    border-radius: 10px;
+    background-color: rgb(23, 23, 23);
+    color: white;
+}
+.subBtn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.detail-data {
+    transform: translateX(60%);
+}
+
+table td:nth-child(3) {
+    transform: translateX(20%);
+}
+
+.form-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

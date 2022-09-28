@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            /* background-color: rgba(15, 17, 16, 0.859); */
+        }
+        li a {
+            display: block;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        a:hover {
+            background-color: rgb(0, 0, 0);
+        }
+        .navbar {
+            display: flex;
+            justify-content: right;
+            background-color: rgba(15, 17, 16, 0.859);
+            
+        }
+
+        @media screen and (max-width:630px) {
+            ul {
+                display: inline;
+            }
+            .navbar {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    </body>
+</html>

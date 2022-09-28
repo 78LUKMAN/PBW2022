@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multimedia HTML 5</title>
+
+    <style>
+        .btn-control {
+            background-color: rgba(0, 187, 255, 0.582);
+        }
+
+        .btn-control:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>HTML 5 - Mengolah File Multimedia</h2>
+    <button class="btn-control">Play</button>
+    <button class="btn-control">Pause</button>
+    <button class="btn-control">Video Duration</button>
+    <button class="btn-control">Enable Controls</button>
+    <button class="btn-control">Disable Controls</button>
+    <button class="btn-control">Check Controls Status</button>
+    <button class="btn-control">Enable Autoplay</button>
+    <button class="btn-control">Disable Autoplay</button>
+    <button class="btn-control">Small Size</button>
+    <button class="btn-control">Normal Size</button>
+    <button class="btn-control">Big Size</button><br><br>
+
+    <video id="myVideo">
+        <source src="src/movie.mp4" type="video/mp4">
+    </video>
+</body>
+<script>
+    var vid = document.getElementById("myVideo");
+    var btnControl = document.querySelectorAll(".btn-control")
+    for (let i = 0; i < btnControl.length; i++) {
+        btnControl[i].setAttribute('id', 'btn' + i)
+        btnControl[i].addEventListener("click", () => {
+            action()
+        })
+        function action() {
+            if (i == 0) {
+                vid.play();
+            }
+            else if (i == 1) {
+                vid.pause();
+            }
+            else if (i == 2) {
+                alert(vid.duration);
+            }
+            else if (i == 3) {
+                vid.controls = true;
+                vid.load();
+            }
+            else if (i == 4) {
+                vid.controls = false;
+                vid.load();
+            }
+            else if (i == 5) {
+                alert("video controls is " + vid.controls)
+            }
+            else if (i == 6) {
+                vid.autoplay = true;
+                vid.load();
+            }
+            else if (i == 7) {
+                vid.autoplay = false;
+                vid.load();
+            }
+            else if (i == 8) {
+                vid.width = 200;
+            }
+            else if (i == 9) {
+                vid.width = 321;
+            }
+            else if (i == 10) {
+                vid.width = 400;
+            }
+            else {
+                return false;
+            }
+        }
+    }
+</script>
+
+</html>

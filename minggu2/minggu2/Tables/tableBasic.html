@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        table,td,th {
+            width: 20%;
+            text-align: center;
+            border: 1px solid rgb(0, 0, 0);
+        }
+        .setCollapse {
+            border-collapse:collapse;
+        }
+        .ridge-style {
+            border:2px red;
+            border-style: dotted;
+        }
+
+        .ridge-style tr td:nth-of-type(odd) {
+            background-color: rgb(0, 170, 255);
+        }
+        .theadSt th {
+            padding: 10px;
+        }
+        .span2 {
+            background-color: beige;
+        }
+        .span3 {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- Basic -->
+    <p>Border-collapse = unset</p>
+    <table class="theadSt">
+        <tr>
+            <th>THEAD</th>
+            <th>THEAD</th>
+            <th>THEAD</th>
+            <th>THEAD</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+    </table>
+    <hr>
+    <p>border collapse = collapse</p>
+    <table class="setCollapse">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+    </table>
+    <hr>
+    <p>Collgroup</p>
+    <table class="collgroup">
+        <colgroup>
+            <col span="2" class="span2">
+            <col span="2" class="span3">
+        </colgroup>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>12</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- border style
+
+    dotted     
+    dashed     
+    solid     
+    double     
+    groove     
+    ridge     
+    inset     
+    outset     
+    none     
+    hidden
+
+-->
+    <p>border-style = dotted & bg color</p>
+    <table class="ridge-style">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+    </table>
+</body>
+</html>
