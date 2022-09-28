@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    border-bottom: 2px solid black;
+    width: 300px;
+    margin: 60px 0 60px 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data-title {
+    width: 200px;
+}
+
+td,
+th {
+    padding: 6px;
+}
+
+.table-content {
+    border-collapse: collapse;
+}
+
+.table-content tr td {
+    padding: 10px 10px 10px 0;
+    border-bottom: .5px solid rgba(159, 160, 160, 0.712);
+}
+
+.bio-img-file {
+    width: 180px;
+}
+
+.bio-main-container {
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 150px 100px 150px;
+    float: left;
+    /* transform: translate(0%, 5%); */
+}
+
+.bio-container {
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.427);
+    height: 100%;
+    min-width: 900px;
+    max-width: 910px;
+}
+
+.bio-container:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.427);
+}
+
+.profile-container {
+    gap: 100px;
+}
+
+.container-title {
+    margin: 0 0 20px 0;
+    font-size: 25px;
+}
+
+.krs-container {
+    flex-direction: column;
+    margin: 100px 50px 100px 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+.krs-content {
+    margin: 30px;
+    border-collapse: collapse;
+}
+
+.krs-content tr th {
+    padding: 10px;
+    background-color: rgba(0, 132, 255, 0.575);
+}
+
+.krs-content tr td {
+    padding: 5px;
+}
+
+.krs-content td,
+th {
+    text-align: left;
+}
+
+.krs-content tr:nth-of-type(even) {
+    background-color: rgb(245, 245, 220);
+}
+
+.video-content {
+    flex-direction: column;
+    margin: 0 0 50px 0;
+}
+.btn-control {
+    padding: 4px;
+    border-radius: 5px;
+    background-color: rgb(127, 212, 255);
+}
+.btn-control:hover {
+    cursor: pointer;
+}
+.control-btn {
+    max-width: 500px;
+}
+
+@media screen and (max-width:767px) {
+    .profile-container {
+        flex-direction: column;
+    }
+    
+    .krs-content, .krs-content thead, .krs-content tbody, .krs-content tr, .krs-content th, .krs-content td {
+        display: block;
+    }
+    .krs-content thead tr {
+        display: none;
+    }
+    .krs-content tbody tr{
+        border: 1px solid rgb(193, 193, 196);
+    }
+    .krs-content td {
+        border: none;
+        position: relative;
+        margin: 10px 0 15px 50%;
+    }
+    .krs-content td::before {
+        position: absolute;
+        top: 6px;
+        width: 50%;
+        left: 6px;
+        content: attr(data-name);
+        padding-right: 10px;
+        margin: 0 0 0 -80%;
+    }
+}
