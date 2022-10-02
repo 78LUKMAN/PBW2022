@@ -38,7 +38,13 @@
                 <tr>
                     <td><label for="tLulus">Tahun Lulus</label></td>
                     <td>:</td>
-                    <td colspan="2"><input type="number" id="tLulus" name="tLulus" required></td>
+                    <td colspan="2"><input type="number" id="tLulus" name="tLulus" required>       
+                  </td>
+                </tr>
+                <tr>
+                    <td><i>(Upload File Izajah)</i></td>
+                    <td>:</td>
+                    <td><input type="file" id="ijazah" name="ijazah" required></td>        
                 </tr>
                 <tr>
                     <td colspan="3">
@@ -115,6 +121,11 @@
                     </td>
                 </tr>
                 <tr>
+                    <td><i>(Upload file Kartu Keluarga)</i></td>
+                    <td><i>:</i></td>
+                    <td><input type="file" name="Kkeluarga" id="Kkeluarga" style="overflow: hidden;"></td>
+                </tr>
+                <tr>
                     <td><label for="noKK">Nomor Kartu Keluarga</label></td>
                     <td>:</td>
                     <td><input type="text" name="noKK" id="noKK"></td>
@@ -146,9 +157,15 @@
                     <td><input type="text" name="nmIbu" id="nmIbu"></td>
                 </tr>
                 <tr>
-                    <td><label for="agama">Agama</label></td>
+                    <td><label for="agamaibu">Agama</label></td>
                     <td>:</td>
-                    <td><input type="text" name="agama" id="agama"></td>
+                    <td><select name="agamaibu" id="agamaibu">
+                        <option value="::none">::none</option>
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="budha">Budha</option>
+                    </select></td>
                 </tr>
                 <tr>
                     <td><label for="pkjn">Pekerjaan</label></td>
