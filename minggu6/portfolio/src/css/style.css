@@ -203,8 +203,8 @@ nav a:hover {
 }
 
 .about-article-content .about-img {
-    width: 300px;
-    margin: -100px 0 100px 0;
+    width: 250px;
+    margin: -20px 0 100px 0;
 }
 
 .about-article-content {
@@ -230,7 +230,7 @@ nav a:hover {
 }
 
 .about-video {
-    width: 500px;
+    width: 400px;
 }
 
 .main-container {
