@@ -1,0 +1,340 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    padding: 7px;
+    box-shadow: 0 1px 20px -5px;
+}
+
+nav ul {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: rgb(0, 115, 255);
+}
+
+.nav-title a {
+    color: rgb(0, 0, 0);
+    /* padding: 8px; */
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-content {
+    max-width: 1000px;
+    height: 100vh;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-container img {
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+}
+.header-desc {
+    margin:20px;
+}
+.cv-btn {
+    margin: 20px auto;;
+}
+.cv-btn span { 
+    border-radius: 10px;
+    background-color: rgb(0, 115, 255);
+    padding: 10px;
+}
+
+.cv-btn a{
+    font-weight: bold;
+}
+
+.cv-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.cv-btn p:hover {
+    cursor: pointer;
+}
+
+.home-article-container {
+    text-align: center;
+    margin: 50px 100px 0 100px;
+}
+.skills-container {
+    text-align: center;
+    margin: 100px 0 100px 0;
+}
+.skills-article-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-article-content {
+    max-width: 400px;
+    display: grid;
+}
+.box-skill-content {
+    box-shadow: 2px 2px 12px -5px;
+    margin: 10px;
+    padding: 10px;
+    max-height: 200px;
+}
+.box-skill-content:hover {
+    box-shadow: 2px 2px 12px -8px;
+} 
+.box-skill-content p {
+    margin: 20px;
+    word-spacing: 2px;
+}
+.box-skill-content h2 {
+    text-align: center;
+}
+.overview-container {
+    display: flex;
+    justify-content: center;
+}
+
+.overview-content {
+    margin: 40px 40px;
+}
+
+.overview-content ul {
+    list-style: none;
+}
+.overview-content ul li {
+    margin: 5px auto;
+}
+
+.contact-info-container {
+    text-align: center;
+    margin: 100px auto;
+    max-width: 800px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-container {
+    margin-top: 100px;
+    max-width: 350px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 25px -18px rgb(167, 167, 167);
+}
+
+.contact-info p {
+    font-style: italic;
+    font-size: 15px;
+    margin: 20px 0 50px 0;
+}
+
+.contact-info table tr {
+    text-align: left;
+    line-height: 30px;
+}
+
+.contact-info table tr td {
+    width: 100px;
+}
+
+.input-box {
+    position: relative;
+    width: 250px;
+    margin-top: 20px;
+}
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+
+.input-box span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    margin-top: 3px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.input-box input:valid~span,
+.input-box input:focus~span,
+.input-box textarea:valid~span,
+.input-box textarea:focus~span {
+    color: rgb(0, 0, 0);
+    transform: translate(10px, -7px);
+    font-size: 0.65em;
+    font-weight: bold;
+    padding: 0 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.input-box input:not(:valid),
+.input-box textarea:not(:valid) {
+    border: 1px solid red;
+}
+
+.input-box input:valid,
+.input-box textarea:valid {
+    border: 1px solid rgba(61, 255, 47, 0.942);
+}
+
+.input-box-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+.contact-action-btn input {
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.contact-action-btn input:hover {
+    cursor: pointer;
+    background-color: rgb(0, 183, 255);
+}
+
+.about-article-content .about-img {
+    width: 250px;
+    margin: -20px 0 100px 0;
+}
+.contact-maps {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.about-article-content {
+    max-width: 710px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-header-content,
+.about-article-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-article-content p,
+.about-article-content h2 {
+    text-align: center;
+    margin: 0 50px 40px 50px;
+}
+
+.about-video {
+    width: 400px;
+}
+
+.main-container {
+    display: flex;
+}
+
+footer {
+    margin: 100px 0 0 0;
+    padding: 5px;
+    background-color: rgb(232, 232, 232);
+    text-align: center;
+}
+footer p {
+    font-size: 15px;
+}
+
+@media screen and (min-width:729px) {
+    .skills-article-content {
+        max-width: 700px;
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+    }
+    .contact-container {
+        margin-top: 100px;
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 30px 0 30px 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px -6px;
+    }
+    .contact-container:hover {
+        box-shadow: 0 0 10px -5px;
+    }
+
+    .header-container img {
+        margin-top: 0;
+    }
+
+    .info-container {
+        margin-top: 0;
+    }
+
+    .input-box-container {
+        margin: 0 50px 0 20px;
+    }
+
+    .about-article-content {
+        max-width: 900px;
+        flex-direction: row;
+        margin: 0px 0 100px 0;
+    }
+    .about-article-content .about-img {
+        margin: -50px 20px 0 0;
+    }
+}
+
+@media screen and (min-width:860px) {
+    .input-box-container {
+        margin-left: 0;
+    }
+}
