@@ -10,3 +10,6 @@ Jumat 12 Nov 2022
 - Upload directory minggu 8
 - Gunakan live server (Vs Code) atau APACHE XAMPP untuk menjalankan code yang ada di dalam folder testing
 - Preview code testing dapat dilihat di : https://78lukman.github.io/testing/
+
+
+<img src="https://bkit.co/w_636e91a386f93.gif" />
