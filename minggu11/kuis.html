@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Data Mahasiswa PBW 2022</h2>
+    <form method="POST" action="javascript:void(0);" id="form">
+        <input type="text" placeholder="Input Nama MHS" id="tambahNama" required>
+        <input type="submit" value="+">
+    </form>
+    <div id="counter">
+        <!-- data dinamis dari javascript-->
+    </div>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>
+                    <b>Daftar Nama</b>
+                </td>
+            </tr>
+        </thead>
+        <tbody id="mhs">
+            <tr>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+
+        const formInput = document.getElementById("form");
+        let arrData = []
+
+        function loadData() {
+            var tbl = document.getElementById("mhs")
+            tbl.innerHTML = ""
+            var data = ""
+            
+            for (let i = 0; i < arrData.length; i++) {
+                data += '<tr id="i">';
+                data += '<td>' + arrData[i] + '</td>';
+                data += '<td>' + '<button onclick="remove('+ i +')">-</button>' + '</td>';
+                data += '</tr>';
+            }
+            tbl.innerHTML += data
+        }
+
+
+        formInput.addEventListener("submit", () => {
+            const name = document.getElementById("tambahNama").value;
+            arrData.push(name)
+            const clearForm = document.getElementById("tambahNama").value = "";
+            loadData()
+        })
+
+
+        const tr = document.getElementsByTagName("tr")
+        function remove(index) {
+            for (let i = 0; i < arrData.length; i++) {
+                if (index == i) {
+                    const delConfirm = confirm("Do you want to delete this item?")
+                    if (delConfirm) {
+                        arrData.splice(index, 1)
+                    }
+                }
+                loadData()
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
