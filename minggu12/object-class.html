@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM API JS</title>
+</head>
+
+<body>
+    <script>
+        // function Person(firstName, lastName) {
+        //     this.firstName = firstName;
+        //     this.lastName = lastName;
+        //     this.fullName = function () {
+        //         return `${this.firstName} ${this.lastName}`
+        //     }
+        //     this.showName = function () {
+        //         document.write(this.fullName());
+        //     }
+        // }
+        // var person1 = new Person("Agus", "Santoro");
+        // var person2 = new Person("Belajar", "Kode");
+        // person1.showName();
+        // document.write("<br>");
+        // person2.showName();
+
+        function car(nama, jenis) {
+            this.crName = nama;
+            this.crJenis = jenis;
+            this.data = () =>  {
+                return `this.${this.crName} this.${this.crJenis}`;
+            }
+            this.display = () => {
+                document.write(this.data);       
+            }
+        }
+
+        const dataCar1 = car("nama1", "jenis1");
+        dataCar1.display();
+    </script>
+</body>
+
+</html>
