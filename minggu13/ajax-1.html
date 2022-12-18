@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Tutorial Ajax</h1>
+    <pre>
+        <div id="hasil"></div>
+    </pre>
+    <button onclick="loadContent()">Load Content</button>
+    <script>
+        function loadContent() {
+            var xhr = new XMLHttpRequest();
+            var url = "http://cloudstorage.uf.uk.eu.org/config/kode.json";
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("hasil").innerHTML =
+                        this.responseText;
+                }
+            };
+            xhr.open("GET", url, true);
+            xhr.send();
+        }
+    </script>
+</body>
+
+</html>
