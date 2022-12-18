@@ -11,5 +11,5 @@ Jumat 12 Nov 2022
 - Gunakan live server (Vs Code) atau APACHE XAMPP untuk menjalankan code yang ada di dalam folder testing
 - Preview code testing dapat dilihat di : https://78lukman.github.io/testing/
 
-
-<img src="https://bkit.co/w_636e91a386f93.gif" />
+Minggu 18 Des 2022
+- JSON_Ajax : http://cloudstorage.uf.uk.eu.org/minggu13-PBW-JSON_AJAX/
